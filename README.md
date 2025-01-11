@@ -1,0 +1,1 @@
+A website that keeps track of things that the user plans to do. It basically acts like a to-do list but as a lover of aesthetics I have made it cute and pink giving it a more personalized feel.

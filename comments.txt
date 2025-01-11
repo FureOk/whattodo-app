@@ -1,0 +1,39 @@
+WHAT TO DO . JS 
+  // const [task, setTask] = useState("");
+
+  // Since we have two components that need one state (the state below) We put the state that is needed in the nearest parent function and pass the state variables needed as props to the components.
+
+  
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   setTasks([...tasks, task]);
+  //   // making use of a spread operator indicates tha the compiler sholuld retain previously entered data. Remember to put it in [] so as to avoid errors
+  //   setTask(" ");
+  // }
+
+  // return (
+  //   <Container>
+  //     <Row className="justify-content-center">
+  //       <Col lg={6} className="form p-5 ">
+  //         <Form onSubmit={handleSubmit}>
+  //           <Form.Control
+  //             onChange={(e) => setTask(e.target.value)}
+  //             type="text"
+  //             placeholder="Enter a Text"
+  //             value={task}
+  //           />
+
+  //           <Button type="submit">Enter</Button>
+  //         </Form>
+
+  //       </Col>
+  //     </Row>
+  //   </Container>
+  // );
+
+  TASK ITEM . JS 
+      // console.log("Item was clicked", item)
+        // let anything = item;
+        // anything.isCompleted = true;
+        // setTasks([...tasks, anything])
+        // console.log(tasks)

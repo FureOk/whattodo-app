@@ -1,0 +1,174 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-pink: pink;
+    --darker-pink: #f699a9;
+    --main-ash: #ccc;
+    --main-white: white;
+}
+body{
+    background-image: url(./assets/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* H E A D E R  */
+
+.header .header-text, .title{
+    height: 60px;
+    font-family: "Pacifico", serif;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.title{
+    margin-top: 5px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/* F O R M */
+
+.formbg{
+    background-color: white;
+    min-height: 400px;
+    box-shadow: 0 4px 6px var(--main-ash);
+    opacity: 0.95;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.form{
+
+    bottom: 0px;
+    margin-top: 30px;
+}
+
+.form .form-input .form-control{
+    border: 0;
+    border-bottom: 2px solid var(--main-ash);
+    font-family:"Montserrat", serif;
+    outline: 0;
+
+    
+}
+.form .form-input .form-control:focus{
+    border-bottom: 1px solid var(--main-ash);
+    outline: none;
+    box-shadow: none;
+    
+}
+
+.form-button{
+    background-color: var(--main-pink);
+    border-color: var(--main-pink);
+}
+
+
+.form-button:focus, .form-button:active{
+    outline: 0;
+    border: 0;
+    background-color: var(--darker-pink) !important ;
+    border-color: var(--darker-pink)  !important ;
+    box-shadow: none;
+}
+
+.form-button:hover{
+    background-color: var(--darker-pink) !important; 
+    border-color: var(--darker-pink);
+}
+
+/* C H E C K B O X */
+
+.form-check-input:checked {
+    background-color: var(--darker-pink);
+    border-color: var(--main-pink);
+  }
+
+.form-check-input:focus {
+    border-color: var(--main-pink);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(230, 69, 168, 0.25);
+  }
+/* container:hover .checkbox ~ .checkboxCustom {
+    background-color: var(--darker-pink);
+  }
+  
+container .checkbox:checked ~ .checkboxCustom {
+    background-color: var(--main-pink);
+  }
+  
+.checkboxCustom:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+container .checkbox:checked ~ .checkboxCustom:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+/* container .checkboxCustom:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--main-ash);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } */ */
+
+  /* T A S K L I S T */
+
+.list{
+    border:0;
+}
+
+.list .list-item{
+   /* background-color: #eed1d1; */
+   border: 0;
+   border-bottom: 1px solid var(--main-ash);
+   text-transform: capitalize;
+   font-size: 15px;
+   font-family:"Montserrat", serif;
+   font-weight: 600;
+
+}
+
+.list .list-item:hover{
+    background-color: var(--main-pink);
+}
+
+.itemList .form-button{
+    background-color: var(--main-white);
+    border-color: var(--main-white);
+    color: var(--main-pink)
+}
+
+
+/* F O O T E R  */
+
+.completed{
+    text-decoration: line-through !important;
+}
+
+.completedTasks{
+    font-family: "Pacifico", serif;
+    height: 60px;
+    margin-top: 20px;
+    bottom:0;
+    position:relative;
+    text-align: center;
+
+
+}
